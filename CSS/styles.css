@@ -1,1 +1,7 @@
-html{}
+html{
+  margin: 0;
+  font-family: 'Montez', cursive;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  width: 320px;
+}
