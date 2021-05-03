@@ -3,72 +3,43 @@ html{
   font-family: 'Montez', cursive;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  width: 320px;
+  min-width: 320px;
+  justify-content: center;
 }
 
-.headerPart{
-  width: 100px;
-  height: 100px;
-  box-sizing: border-box;
-  background-color: aquamarine;
+.MainContainer{
+ position: relative;
+ min-width: 450px;
+ width: 100%;
+ height: 600px;
+ background-color: darkgreen;
 }
 
-.Navigosha a{
-  text-decoration: none;
-  font-size: 20px;
+.parallax {
+  /* The image used */
+  background-image: url("../Assets/pexels-aleksandar-pasaric-325185.png");
 
-
-}
-
-.Navigosha li{
-  list-style-type: none;
-
-}
-
-.Test{
- width: 500px;
-  height: 400px;
-  margin-top: 30px;
+  /* Set a specific height */
+  min-height: 500px;
   display: flex;
-  margin: 0 auto;
-  background-color: aqua;
-  box-sizing: border-box;
-  border: 3px black dashed;
-  border-radius: 25%;
-  box-shadow: inset 0 0 10px #000000;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column wrap;
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  font-size: 60px;
 }
 
-.MainContainer {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: center;
-    background-color: lightskyblue;
-    margin-top: 25px;
-    margin-bottom: 10px;
-  }
-  .leftSide, .rightSide {
-    width: 320px;
-    height: 400px;
-    box-sizing: border-box;
-    margin: 25px;
-    background-color: rgb(233, 233, 17);
-    border-radius: 15%;
-    border: dashed 3px darkorange;
-    box-shadow: inset 0 0 10px black;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: 4mm ridge rgba(170, 50, 220, .6);
-  }
-     .leftSide img, .rightSide img {
-       width: 170px;
-     }
-
-.logoSha{
-  width: 100px;
-  height: 100px;
+.parallax button{
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: darksalmon;
+  border-radius: 15px;
 }
+
